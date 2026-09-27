@@ -1,0 +1,36 @@
+/* Màu nền cho cả trang */
+body {
+    background-color: #fdf6e3;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a5fb4;
+}
+
+/* Khối div có ảnh nền */
+.banner {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    /* ảnh phủ kín khối, không bị lặp */
+    background-position: center;
+    /* lấy phần giữa ảnh */
+    background-repeat: no-repeat;
+
+    height: 300px;
+    border-radius: 10px;
+
+    /* Căn giữa nội dung theo cả chiều ngang và chiều dọc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Chữ trắng, có bóng để dễ đọc trên ảnh */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
